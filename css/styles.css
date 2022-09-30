@@ -14,8 +14,25 @@ body{
 
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.page-header{
+    width: 1600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
+
 }
 .logo{
+    margin-left: 215px ;
+    margin-top: 24px;
+    margin-bottom: 25px;
     color:#000000 ;
 
     font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,7 +40,6 @@ body{
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-
 }
 .first-logo, 
 .logo:hover, 
@@ -32,9 +48,25 @@ body{
 .link:focus {
     color: var(--accent-text-color) ;
 }
+.flex-box{
+    display: flex;
+}
+.site-nav{
+    width: 281px;
+}
+.site-nav, 
+.contacts{
+    display: flex;
+}
+.site-nav .flex-element{
+    padding-top:32px ;
+    padding-bottom: 32px ;
+}
 .site-nav .link-current{
     color: var(--accent-text-color);
-
+}
+.site-nav .flex-element:first-child{
+    margin-left: 93px;
 }
 .site-nav .nav-link,
 .contacts .contact-link{
@@ -45,9 +77,26 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+
+    margin-bottom: 0;
+
 }
 .nav-link {
     color:var(--secondary-text-color) ;
+}
+.site-nav .flex-element:not(:first-child){
+    margin-left: 50px;
+}
+.contacts .flex-element{
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.contacts .flex-element:first-child{
+    margin-left: 344px;
+}
+.contacts .flex-element:not(:first-child){
+    margin-left: 50px;
 }
 .contact-link{
     color: var(--primary-text-color);
@@ -60,10 +109,18 @@ color: var(--btn-text-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
+
+    width: 696px;
+    margin-top: 30;
+    margin-bottom: 30;
+
 }
 .main-section{
     background-color: #2F303A;
+    text-align: center;
+    padding: 200px 452px;
+    width: 1600px;
+    margin: 0 auto;
 }
 .order-btn{
     color: var(--btn-text-color);
@@ -75,8 +132,12 @@ color: var(--btn-text-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    
+    min-width: 216px;
     border: none;
     outline: none;
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 .order-btn:hover, 
 .order-btn:focus{
@@ -92,19 +153,40 @@ color: var(--btn-text-color);
     font-size: 16px;
     line-height: 26px;
     border: none;
-    outline: none;
-    
+    outline: 1px solid red;
+}
+.filter{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 34px;
+    justify-content: center;
+}
+.button:not(:first-child){
+    margin-left: 8px;
+}
+.work-list{
+    display: flex;
+    margin-top: 94px;
+        margin-bottom: 50px;
 }
 .filter-btn:hover,
 .filter-btn:focus{
     color: var(--btn-text-color);
     background-color: var(--accent-text-color);
 }
+.section{
+    padding-bottom: 94px;
+    width: 1600px;
+    margin: 0 auto; 
+}
 .section-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+
 }
 .visually-hidden{
     position: absolute;
@@ -113,16 +195,25 @@ color: var(--btn-text-color);
     height: 1px;
     overflow: hidden;
     border: 0;
-     padding: 0;
+    padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-
 }
 .section-title, 
 .paragraph-title,
 .works{
     color: #212121;
+}
+.advantages .flex-element:not(:first-child){
+    margin-left: 30px;
+}
+.advantages{
+    padding-top: 54px;
+}
+.examples{
+    display: flex;
+    justify-content: space-between;
 }
 .works{
     font-weight: 700;
@@ -131,13 +222,16 @@ color: var(--btn-text-color);
     letter-spacing: 0.06em;
 }
 .paragraph-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 .paragraph-title.member{
-font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
@@ -146,23 +240,50 @@ font-weight: 500;
     line-height: 1.18;
 }
 .paragraph-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    
     font-size: 14px;
     line-height: 1.71;
 }
+.list.flex-box .flex-element{
+    width: 270px;
+}
 .back-color{
+    text-align: center;
     background-color: var(--btn-text-color);
+
+}
+.team{
+    background-color: #F5F4FA;
 }
 .team-list{
+    display: flex;
+    justify-content: space-between;
+
     background-color: #F5F4FA;
 }
 .type{
     font-size: 16px;
-        line-height: 1.87;
+    line-height: 1.87;
 }
 .footer{
+    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
     background-color: #2F303A;
 }
 .logo.accent{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0;
+
     color: #FFFFFF;
 }
 .location{
@@ -180,4 +301,7 @@ font-weight: 500;
     line-height: 2;
     text-decoration: none;
     font-style: normal;
+}
+.info .flex-element:not(:first-child){
+    margin-top: 9px;
 }
