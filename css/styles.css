@@ -4,6 +4,7 @@
     --accent-text-color:#2196F3;
     --btn-text-color:#FFFFFF;
     --order-btn-active:#188CE8;
+    --background-color-secondary:#F5F4FA;
 }
 body{
     color:var(--primary-text-color) ;
@@ -26,7 +27,7 @@ body{
 .page-header{
     width: 1600px;
     margin: 0 auto;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
 
 }
 .logo{
@@ -143,9 +144,14 @@ color: var(--btn-text-color);
 .order-btn:focus{
     background-color: var(--order-btn-active);
 }
+.all-btn{
+    padding: 6px 25px 6px 25px;
+}
 .filter-btn{
+    padding: 6px 22px 6px 22px;
+
     color:#212121 ;
-    background-color: #F5F4FA ;
+    background-color: var(--background-color-secondary) ;
     cursor: pointer;
 
     font-family: inherit;
@@ -153,7 +159,7 @@ color: var(--btn-text-color);
     font-size: 16px;
     line-height: 26px;
     border: none;
-    outline: 1px solid red;
+    outline: none;
 }
 .filter{
     display: flex;
@@ -166,8 +172,11 @@ color: var(--btn-text-color);
 }
 .work-list{
     display: flex;
-    margin-top: 94px;
-        margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.work-list .flex-element{
+    border: 1px solid #EEEEEE;
 }
 .filter-btn:hover,
 .filter-btn:focus{
@@ -216,6 +225,11 @@ color: var(--btn-text-color);
     justify-content: space-between;
 }
 .works{
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -229,6 +243,10 @@ color: var(--btn-text-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    
+}
+.paragraph-title .flex-element{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .paragraph-title.member{
     font-weight: 500;
@@ -236,35 +254,48 @@ color: var(--btn-text-color);
     line-height: 1.18;
 }
 .position{
+    padding-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.18;
 }
 .paragraph-text{
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     margin-right: 0;
     
     font-size: 14px;
     line-height: 1.71;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .list.flex-box .flex-element{
     width: 270px;
 }
 .back-color{
+    padding-top: 30px;   
     text-align: center;
     background-color: var(--btn-text-color);
 
 }
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--background-color-secondary);
+
+    padding-top: 94px;
+}
+.team-pic{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
+    height: 378px;
 }
 .team-list{
     display: flex;
     justify-content: space-between;
 
-    background-color: #F5F4FA;
+    background-color: var(--background-color-secondary);
 }
 .type{
+    margin-bottom: 20px;
+    margin-left: 24px;
     font-size: 16px;
     line-height: 1.87;
 }
