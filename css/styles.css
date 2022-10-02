@@ -72,6 +72,8 @@ body{
 .site-nav .nav-link,
 .contacts .contact-link{
     text-decoration: none;
+
+    padding: 32px 0;
 }
 .site-nav,
 .contacts{
@@ -139,6 +141,7 @@ color: var(--btn-text-color);
     height: 50px;
     border: none;
     outline: none;
+    
     padding: 10px;
     border-radius: 4px;
     margin-top: 30px;
@@ -178,15 +181,15 @@ color: var(--btn-text-color);
 .work-list{
     display: flex;
     flex-wrap: wrap;
-align-items: ;
+    
     margin-top: calc(-1 * var(--card-set-gap));
     margin-left: calc(-1 * var(--card-set-gap));
     
 }
-.work-list .flex-element{
+.work-list > .flex-element{
     border: 1px solid #EEEEEE;
     
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    flex-basis: calc( 100% / 3 - 37px);
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
 }
@@ -269,6 +272,7 @@ align-items: ;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-transform: none;
 }
 .position{
     font-size: 16px;
@@ -286,7 +290,7 @@ align-items: ;
     width: 270px;
 }
 .back-color{
-    padding: 30px 70px;
+    padding: 30px 30px;
     text-align: center;
     background-color: var(--btn-text-color);
 
@@ -326,7 +330,6 @@ align-items: ;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
-    margin-bottom: 60px;
 
     background-color: #2F303A;
 }
