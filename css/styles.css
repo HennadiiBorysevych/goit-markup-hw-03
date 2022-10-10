@@ -95,6 +95,7 @@ body{
 }
 .contacts .flex-element{
     padding: 32px 0;
+    align-items: center;
 }
 
 .contacts .flex-element:not(:first-child){
@@ -102,6 +103,19 @@ body{
 }
 .contact-link{
     color: var(--primary-text-color);
+}
+
+.icon-mail{
+    background-image: url(../images/envelope.svg); 
+    background-repeat: no-repeat;
+    background-position: left ;
+   
+}
+.icon-phone{
+    background-image: url(../images/smartphone.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+
 }
 .hero-title{
 color: var(--btn-text-color);
@@ -116,12 +130,25 @@ color: var(--btn-text-color);
     margin: 0 auto;
 
 }
+
 .main-section{
-    background-color: #2F303A;
+    background-color: 2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
+}
+.main-section{
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+    ),url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .order-btn{
     color: var(--btn-text-color);
